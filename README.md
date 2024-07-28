@@ -11,6 +11,6 @@
 ### Training Loop:
 - **Generate Data**: Use $\pi$ to generate trajectories
 - **Train Discriminator**: Train $\phi$ to distuingish between $\pi_E$ and $\pi$.
-- **Policy Update**: Update $\pi_e$ using RL signal with $\phi$ output as reward.
+- **Policy Update**: Update $\pi_E$ using RL signal with $\phi$ output as reward.
 ### Evaluation and Refinement:
-- Evaluate / Benchmark $\pi$ and $\pi_e$ with "LOB-Bench: Towards Benchmarking Generative AI for Finance"
+- Evaluate / Benchmark $\pi$ and $\pi_E$ with "LOB-Bench: Towards Benchmarking Generative AI for Finance"
