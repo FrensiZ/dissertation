@@ -31,8 +31,8 @@ $S_t = S_0 * \exp\left(\left(\mu - \frac{\sigma^2}{2}\right) t + \sigma W_t\righ
 
 Where:
 - $S_0$ is the initial price
-- $mu$ is the drift (average return)
-- $sigma$ is the volatility (standard deviation)
+- $\mu$ is the drift (average return)
+- $\sigma$ is the volatility (standard deviation)
 - $W_t$ is a Wiener process (representing the random market component).
 
 Example code for generating the data:
