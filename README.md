@@ -27,9 +27,7 @@ The goal of this project is to simulate realistic token trajectories by training
 
 The data preparation section simulates time series data using **Geometric Brownian Motion (GBM)**. GBM is commonly used to model stock prices and other financial variables. The formula used to generate the price sequence is:
 
-$S_t = S_0 \exp\left(\left(\mu - rac{\sigma^2}{2}
-ight)t + \sigma W_t
-ight)$
+$S_t = S_0 \exp\left(\left(\mu - \frac{\sigma^2}{2}\right) t + \sigma W_t\right)$
 
 Where:
 - \(S_0\) is the initial price
