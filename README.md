@@ -1,5 +1,5 @@
 
-# Token-Sequence Prediction
+# Adversarial Learning for Sequence Generation
 
 This repository contains code for generating token-based sequences using a combination of self-supervised learning and adversarial imitation learning techniques. The main model is based on the **RecurrentPPO** implementation from Stable Baselines3.
 
