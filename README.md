@@ -27,13 +27,13 @@ The goal of this project is to simulate realistic token trajectories by training
 
 The data preparation section simulates time series data using **Geometric Brownian Motion (GBM)**. GBM is commonly used to model stock prices and other financial variables. The formula used to generate the price sequence is:
 
-$S_t = S_0 \exp\left(\left(\mu - \frac{\sigma^2}{2}\right) t + \sigma W_t\right)$
+$S_t = S_0 * \exp\left(\left(\mu - \frac{\sigma^2}{2}\right) t + \sigma W_t\right)$
 
 Where:
-- \(S_0\) is the initial price
-- \(\mu\) is the drift (average return)
-- \(\sigma\) is the volatility (standard deviation)
-- \(W_t\) is a Wiener process (representing the random market component).
+- $S_0$ is the initial price
+- $mu$ is the drift (average return)
+- $sigma$ is the volatility (standard deviation)
+- $W_t$ is a Wiener process (representing the random market component).
 
 Example code for generating the data:
 
@@ -53,7 +53,7 @@ Price_GBM = S0 * np.exp((mu - 0.5 * sigma ** 2) * t + sigma * np.cumsum(W_t))
 
 ### Model Setup
 
-The core model uses a **Recurrent Neural Network (RNN)** architecture with **Long Short-Term Memory (LSTM)** cells. It’s set up as a policy network with shared layers between the actor (for policy learning) and the critic (for value function approximation). The main algorithm used is **RecurrentPPO**, which leverages the temporal structure of the data.
+The core model uses a **Recurrent Neural Network (RNN)** architecture with **Long Short-Term Memory (LSTM)** cells. It’s set up as a policy network with shared layers between the actor (for policy learning) and the critic (for value function approximation). The main algorithm used is **RecurrentPPO**.
 
 #### Model Architecture
 
