@@ -53,7 +53,7 @@ Price_GBM = S0 * np.exp((mu - 0.5 * sigma ** 2) * t + sigma * np.cumsum(W_t))
 
 ### Model Setup
 
-The core model uses a **Recurrent Neural Network (RNN)** architecture with **Long Short-Term Memory (LSTM)** cells. It’s set up as a policy network with shared layers between the actor (for policy learning) and the critic (for value function approximation). The main algorithm used is **RecurrentPPO**.
+The core model uses an LSTM architecture. It’s set up as a policy network with shared layers between the actor (for policy learning) and the critic (for value function approximation). The main algorithm used is **RecurrentPPO**.
 
 #### Model Architecture
 
