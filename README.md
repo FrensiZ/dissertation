@@ -1,16 +1,16 @@
 
 # Token-Sequence Prediction
 
-This repository contains code for predicting token sequences using a combination of self-supervised learning and adversarial imitation learning techniques. The main model is based on the **RecurrentPPO** implementation from Stable Baselines3.
+This repository contains code for generating token-based sequences using a combination of self-supervised learning and adversarial imitation learning techniques. The main model is based on the **RecurrentPPO** implementation from Stable Baselines3.
 
 ## Project Overview
 
-The goal of this project is to simulate realistic token trajectories by training a generative model on observed real data. The model can be applied to financial price innovations, where predicting future price movements accurately is crucial. The self-supervised learning approach is used as a pre-training phase before applying adversarial imitation learning.
+The goal of this project is to simulate realistic token trajectories by training a generative model on observed real data. The self-supervised learning approach is used as a pre-training phase before applying adversarial imitation learning.
 
 ### Key Features
 
 - **Self-Supervised Learning**: For pre-training the model on sequence data using teacher forcing.
-- **Generative Adversarial Imitation Learning (GAIL)**: Imitating real-world token sequences by training a policy network.
+- **Generative Adversarial Imitation Learning (GAIL)**: Imitating real token sequences by training a policy network.
 - **RecurrentPPO**: Proximal Policy Optimization with recurrent networks for processing time-series data.
 
 ## Libraries Used
@@ -27,8 +27,9 @@ The goal of this project is to simulate realistic token trajectories by training
 
 The data preparation section simulates time series data using **Geometric Brownian Motion (GBM)**. GBM is commonly used to model stock prices and other financial variables. The formula used to generate the price sequence is:
 
-\[S_t = S_0 \exp\left(\left(\mu - rac{\sigma^2}{2}ight)t + \sigma W_tight)
-\]
+$S_t = S_0 \exp\left(\left(\mu - rac{\sigma^2}{2}
+ight)t + \sigma W_t
+ight)$
 
 Where:
 - \(S_0\) is the initial price
